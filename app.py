@@ -32,11 +32,26 @@ def safe(call):
 
 st.title('📐 MathGenius UMG')
 st.caption('Asistente virtual de Cálculo y Precálculo · Universidad Mariano Gálvez de Guatemala')
+
 with st.sidebar:
     st.header('Información académica')
-    a=st.text_input('Integrante 1',value='Nombre del integrante 1')
-    b=st.text_input('Integrante 2',value='Nombre del integrante 2')
-    section=st.text_input('Sección',value='Completar sección')
+
+    st.write('**Universidad:** Mariano Gálvez de Guatemala')
+    st.write('**Proyecto:** MathGenius UMG')
+
+    st.write('**Integrantes:**')
+    st.write('1. Richard Alexander Flores Gramajo')
+    st.write('2. Mario David Guerra Sazo')
+
+    st.write('**Sección:** B')
+    st.write('**Asignatura:** Cálculo y Precálculo')
+
+    st.info(
+        'Escribe potencias como x^2, '
+        'multiplicaciones como 2*x '
+        'y funciones como sin(x).'
+    )
+
     st.write('**Asignatura:** Cálculo y Precálculo')
     st.info('Escribe potencias como x^2, multiplicaciones como 2*x y funciones como sin(x).')
 
@@ -190,6 +205,23 @@ with tab[6]:
             elif k=='int':st.write(f'Regla de integración: ∫a·x^n dx = a·x^(n+1)/(n+1)+C. Aquí a={a} y n={b}.')
             else:st.write(f'Sustituye x=2: {a}·2+{b}={2*a+b}.')
         safe(check)
+
 st.divider()
-st.caption(f'Proyecto académico · {a if False else ""}{st.session_state.get("unused", "")} Integrantes: {st.session_state.get("name1", "ver barra lateral")} · Asignatura: Cálculo y Precálculo · Sección: {section}')
+
+st.markdown("""
+### Información del proyecto
+
+**Universidad Mariano Gálvez de Guatemala**
+
+**Proyecto:** MathGenius UMG
+
+**Integrantes:**
+- Richard Alexander Flores Gramajo
+- Mario David Guerra Sazo
+
+**Sección:** B
+
+**Asignatura:** Cálculo y Precálculo
+""")
+
 st.caption('Advertencia: algunas expresiones avanzadas pueden requerir métodos no implementados. Revisa siempre el dominio y las restricciones.')
