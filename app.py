@@ -44,7 +44,7 @@ with st.sidebar:
     st.write('2. Mario David Guerra Sazo')
 
     st.write('**Sección:** B')
-    st.write('**Asignatura:** Cálculo y Precálculo')
+    st.write('**Asignatura:** Precálculo')
 
     st.info(
         'Escribe potencias como x^2, '
