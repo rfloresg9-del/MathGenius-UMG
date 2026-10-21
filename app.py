@@ -52,9 +52,6 @@ with st.sidebar:
         'y funciones como sin(x).'
     )
 
-    st.write('**Asignatura:** Cálculo y Precálculo')
-    st.info('Escribe potencias como x^2, multiplicaciones como 2*x y funciones como sin(x).')
-
 sections=['Álgebra y funciones','Gráficas','Límites','Derivadas','Integrales','Aplicaciones','Ejemplos y práctica']
 tab=st.tabs(sections)
 with tab[0]:
