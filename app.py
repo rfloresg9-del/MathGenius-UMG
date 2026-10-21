@@ -205,20 +205,5 @@ with tab[6]:
 
 st.divider()
 
-st.markdown("""
-### Información del proyecto
-
-**Universidad Mariano Gálvez de Guatemala**
-
-**Proyecto:** MathGenius UMG
-
-**Integrantes:**
-- Richard Alexander Flores Gramajo
-- Mario David Guerra Sazo
-
-**Sección:** B
-
-**Asignatura:** Cálculo y Precálculo
-""")
 
 st.caption('Advertencia: algunas expresiones avanzadas pueden requerir métodos no implementados. Revisa siempre el dominio y las restricciones.')
